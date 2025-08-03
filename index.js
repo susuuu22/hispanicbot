@@ -73,6 +73,13 @@ client.on('messageCreate', async message => {
     } catch (error) {
       console.error('❌ Error al intentar mutear:', error);
     }
+    return;
+   }
+
+  if (contenido.includes("tiktok")) {
+    await message.reply({
+      content: "📣 ¡Síguenos en TikTok!: https://www.tiktok.com/@hispanicrp_?_t=ZS-8xOo0mcmiUq&_r=1"
+    });
   }
 });
 
